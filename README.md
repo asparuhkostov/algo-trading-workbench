@@ -42,12 +42,12 @@ Contains the actual Jupyter notebook workbench from which:
 
 ### `/web_scraping`
 
-Contains a short script that brings up an ExpressJS server that in turn uses Playwright to parse Avanza's page to provide OHLC (+ Volume) time series data in the same `.csv` format as AlphaVantage's api.
+Contains a short script that brings up an ExpressJS server that in turn uses Playwright to parse Avanza's page to provide OHLC (+ Volume) time series data in the same `.csv` format as AlphaVantage's API.
 
 ## Running
 
 1. (assumming you have jupyter notebook / VSCode with the proper extensions enabled / your choice of notebook engine) `jupyter lab` (in `/backtesting`)
-2. Then make sure you have your AlphaVantage API & Secret set as environment variables.
+2. Then make sure you have your AlphaVantage API token set as environment variables.
 3. Bring the `web_scraping/` service up by running `yarn start` (after making sure you have the necessary `node_modules` by running `yarn` ofc)
 4. Click run on the main cell (wait for the time series to be downloaded, which usually takes roughly a minute if one of the strategies uses the web scraper, otherwise some 20 odd seconds)
 5. Inspect the performance report
