@@ -1,0 +1,6 @@
+*node_modules/
+*.pyc
+*ipynb-checkpoint
+*-checkpoint.ipynb
+*-checkpoint.py
+*.ipynb
